@@ -1,0 +1,61 @@
+1. На github.com креирав профил со username, email и password.
+
+2. Ja преименував гранката main во master.
+
+3. Креирав ново празно remote repo.
+
+4. Креирав нова папка со исто име како и remote repo и  со наредбата git init иницијализирав local repo.
+
+5. git remote add origin git@github.com:KristinaKaranfilova/SI_2024_lab1_213115.git - го поврзав локалниот со одалечениот репозиториум.
+
+6. Креирав README.md датотека со лични податоци, со командата git add . - ја  ставаме во stage фаза а потоа со git commit -m "Initial commit" правиме нов commit.
+
+7. Ги симнав фајловите и најпрво со git add . - ги ставив во stage фаза, а потоа со git commit -m "Add startern code" додаваме нов commit.
+8.git push - синхронизација со remote repo.
+
+9. git checkout -b bug1 ,  git checkout -b bug2 креираме нови гранки.
+10. git checkout bug1 - се префрлуваме на гранката bug1.
+
+11. Поправање на грешката и додавање на нов commit со  git commit -m "Fix wrong condition in filterOddLengthString".
+
+12. git checkout bug2 - се префрлуваме на гранката bug2.
+
+13. Поправање на грешката и додавање на нов commit со  git commit -m "Fix wrong condition in makeBigStringFrom".
+
+14. git checkout bug1 - се префрлуваме на гранката bug1.
+
+15.Правиме измени во класата SILab1Main, и потоа со наредбата git commit -m "Call method filterOddLengthStrings in main class" додаваме нов commit.
+
+16. git checkout bug2 - се префрлуваме на гранката bug2.
+
+17. Правиме измени во класата SILab1Main, и потоа со наредбата git commit -m " Call method makeBigStringFrom in main class" додаваме нов commit.
+
+18. git push origin bug2, git push origin bug1 - правиме синхронизација на гранките со одалечениот репозиториум
+
+19. git checkout master - се префрлуваме на гранката master.
+
+20. git merge bug1 -  Спојување на гранката bug1 кон гранката master, спојувањето беше без конфликт со fast-forward стратегија.
+
+21. git push - правиме синхронизација
+
+22. git checkout bug2 - се префрлуваме на гранката bug2.
+
+23. git rebase master - Да имаше конфликти. Конфликтот беше во тоа што на 16та линија во master гранката веќе имавме линија код додадено, која што беше додадена во bug1 а потоа при спојувањето и во master. При обид за rebase од bug2 со master, се јави конфликт заради разликата на оваа 16та линија. Го решив со тоа што ги прифатив и двете промени и од master и од bug2.
+
+24. git checkout master - се префрлуваме на гранката master.
+
+25. git merge bug2 - Спојување на гранката bug2 кон гранката master, спојувањето беше без конфликт со fast-forward стратегија.
+
+26. git push origin master
+    git push origin bug1
+    git push origin bug2 - правиме синхронизација
+
+27.git push origin bug2 --force - бидејки има конфликт со remote repo 
+
+28. git add .
+    git commit -m "Final commit"
+
+29.git push - правиме синхронизација
+
+
+
